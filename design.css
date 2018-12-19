@@ -1,0 +1,83 @@
+:root {
+  --main-font-color:  #F8E0FF;
+}
+
+
+body {
+  background-color: lightsteelblue;
+  opacity:inherit;
+  background-image: url(128420_full-hd-space-wallpapers-wallpapers-hd-base_1920x1080_h.jpg);
+
+  justify-content:center;
+  align-items: center;
+
+
+}
+
+#insertCanvas {
+
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+
+}
+
+h1 {
+  font-size:48pt;
+  text-align:center;
+  padding-top:20pt;
+  color:  var(--main-font-color);
+  font-family:"Futura", Times ,serif;
+
+}
+
+h6 {
+  font-style:italic;
+  font-size:15pt;
+  text-align:center;
+  color: var(--main-font-color);
+  font-family:"Futura", Times ,serif;
+}
+
+hr {
+
+  width:20%;
+  margin-top:0.5em;
+  border-width:1px;
+
+}
+
+#gradientField {
+
+  text-align:left;
+  font-size:10pt;
+  color: var(--main-font-color);
+  margin-top:0;
+  font-family:"Futura", Times ,serif;
+  padding-left:10px;
+  margin-left:10px;
+
+
+}
+
+#h2gradientField {
+  color: var(--main-font-color);
+  font-family:"Futura", Times ,serif;
+  padding-left:10px;
+  margin-left:10px;
+}
+
+p {
+  color: var(--main-font-color);
+  font-family:"Futura", Times ,serif;
+  padding-left: 50px;
+  margin-bottom:50px;
+
+}
+
+li  {
+  color: var(--main-font-color);
+  font-family:"Futura", Times ,serif;
+  padding-left: 50px;
+  margin-bottom:50px;
+}

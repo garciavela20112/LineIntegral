@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="LINE INTEGRALS, GREEN's THEOREM, MULTIVARIABLE CALCULUS">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  //  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+
+  <script type="text/javascript" charset="UTF-8" src="calculations.js"></script>
+
+  <!-- <script type="text/javascript" charset="UTF-8"
+   src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraph.css" />
+-->
+
+  <script type="text/javascript">
+      function analysis(){
+          if(path1()==path2()==path3()){
+            var parent= document.getElementById('describingCalculations');
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode("As the line integrals are equal, the vector field is conservative and has potential functions");
+            parent.appendChild(entry);
+          }else{
+            var parent= document.getElementById('describingCalculations');
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode("As the line integrals are NOT equal, the vector field is not conservative  -- path-dependent");
+            parent.appendChild(entry);
+          }
+      }
+  </script>
+
+  <script type="text/javascript" src="p5/p5.min.js"></script>
+  <script type="text/javascript" src="sketch.js"></script>
+  <link rel="stylesheet" type="text/css" href="design.css">
+
+
+  <title>Line Integrals and Green's Theorem Simulation</title>
+
+</head>
+
+<body background="128420_full-hd-space-wallpapers-wallpapers-hd-base_1920x1080_h.jpg">
+
+
+  <h1> Line Integrals with Green's Theorem</h1>
+
+  <h6>Describing Green's Theorem with Visualization P5.js Implementation</h6>
+    <hr>
+
+  <h2 id="h2gradientField">Adjustable Continuous Gradient Field</h2>
+  <div style="width:100%;">
+    <h6 id="gradientField"> The vector field below is of the function:</h6>
+    <img src="Screen Shot 2018-12-19 at 8.35.04 PM.png" alt="Function is unable  to be displayed">
+  </div>
+
+  <ul id="describingCalculations" href="javascript:analysis()"></ul>
+
+
+
+
+
+</body>
+
+
+</html>
